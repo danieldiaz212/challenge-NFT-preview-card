@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Outfit Thin';
+    src: url('Outfit.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Outfit Thin';
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    height: 95vh;
+}
+#card{
+    background-color:  hsla(215, 51%, 16%, 0.822);
+    backdrop-filter: blur(4rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem .5rem hsla(0, 100%, 2%, 0.192);
+}
+#view{
+    width: 100px;
+
+}
+#imagen{
+    border-radius: 10px;
+    position: relative;
+}
+
+#view{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.7);
+    position: absolute;
+    transition: 1s ease;
+    border-radius: 10px;
+
+    opacity: 0; 
+}
+#view-imagen{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#view:hover{
+    opacity: .85; 
+    transition: 1s ease;
+}
+    
+
+#imagen-dentro{
+    margin: 0 auto; 
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+
+p, h3{
+    color: hsl(215, 51%, 70%);
+    font-size: .7rem;
+    transition: 1s ease;
+}
+h3{
+    font-size: .9rem;
+}
+.texto{
+    font-size: .6rem;
+}
+
+span,h3{
+    color: hsla(0, 0%, 100%, 0.932);
+    letter-spacing: 1px;
+    transition: 1s ease;
+}
+
+
+#en-linea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;    
+    border: 10px hsl(225, 12%, 93%);
+
+}
+#vistas, #tiempo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+#tiempo{
+    justify-content: flex-end;
+    margin-right: 0;
+}
+#avatar{
+    display: flex;
+    align-items: center;
+}
+#imagen-avatar{
+    width: 30px;
+    height: 100%;
+    margin-right: 5%;
+}
+.icono{
+    float: left;
+    margin-right: 5px;
+    
+}
+hr{
+    width: auto;
+    height: 2px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+}
+
+h3:hover, .eth:hover, span:hover{
+color: hsl(178, 100%, 50%);
+transition: 1s ease;
+}
+
+@media screen and (max-width:375px) {
+    #card{
+        width: 90%;
+    }
+    p{
+        font-size: .9rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .texto{
+        font-size: .7rem;
+    }
+}
